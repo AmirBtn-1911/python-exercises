@@ -14,13 +14,16 @@
 in_num = int(input('enter a number : '))
 num4 = num1 = 0
 num2 = num3 = 1
-while in_num >= num4 :
-    if num3 + num2 >= in_num:
-        break
-    else:
-        num4 = num3 + num2
-        num2 = num3
-        num3 = num4
-        num1 = num2
-    print(num4 , ' ' , end='')
-    continue
+if in_num > 0 :
+    while in_num >= num4 :
+        if num3 + num2 >= in_num:
+            break
+        else:
+          num4 = num3 + num2
+          num2 = num3
+          num3 = num4
+          num1 = num2
+        print(num4 , ' ' , end='')
+        continue
+else:
+    print('unsopported number!')
