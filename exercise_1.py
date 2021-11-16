@@ -4,6 +4,6 @@ age = int(input('now write your age here : '))
 if age > 105 or age < 0:
     print('the number is invalid.')
 elif age >= 18:
-    print('welcome to site')
+    print('welcome to site',name)
 else:
-    print('you are not allowed to enter the site.')
+    print('dear',name + ',you are not allowed to enter the site.')
