@@ -8,5 +8,6 @@ while True:
         print('the number', x,'is greater than', y)
     elif x < y :
         print('the number', x, 'is smaller than', y)
+#the rest of the code bellow is optional, by deleting it, it wont affect on the progect
     print('\n'+'\n'+'ok enter another numbers'+'\n')
     continue
