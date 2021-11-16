@@ -67,7 +67,61 @@
 # number = int(input('type a number: '))
 # number_check(number)
 
-def faak(number):
-    '''factorial'''
+# def faak(number):
+#     '''factorial'''
+#number = int(input('enter a number :'))
 
-number = int(input('enter a number :'))
+# n = int(input('enter a number: '))
+# print(n, n * '+')
+
+# st_scores = int(input('enter the number of scores : '))
+# av2 = av1 = counter = 0
+# while counter < st_scores:
+#     counter +=1
+#     av0 = float(input("enter the %s avarage : " %counter))
+#     if av0 > av1:
+#         av2 = av1
+#         av1 = av0
+#     elif av0 > av2:
+#         av2 = av0
+# print(av2)
+
+# n=int(input("enter  :"))
+# x=z=0
+# y=1
+# while True:
+#     if z >= n:
+#         break
+#     print(y,end='\t')
+#     z=x+y
+#     x=y
+#     y=z
+
+# n = 5
+# t =c =1
+# while c<=n :
+#     t = t*c
+#     c += 1
+# print(t)
+
+# n=5
+#
+# if n < 0:
+#     print('aa')
+# else:
+#     x = 1
+#     while 1 <= n:
+#         x *= n
+#         n -= 1
+#     print(x)
+
+n = int(input('enter a number : '))
+c1 = 1
+while c1 <= n:
+    print(c1 ,':', end='')
+    c2 = 1
+    while c2 <= c1:
+        print('*',end = '')
+        c2 += 1
+    print()
+    c1 += 1
