@@ -1,7 +1,6 @@
 import os
 import random
 import time
-from typing import Counter
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
