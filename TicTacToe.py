@@ -29,7 +29,7 @@ count = 0
 def dooz(XO, *l):
     global count
     os.system('cls' if os.name == 'nt' else 'clear')
-    print('--TicTocToe--\n')
+    print('__ Tic-Tac-Toe __\n')
     l = list(l)
     print(sorter(l[0],l[1],l[2]))
     print(sorter(l[3],l[4],l[5]))
@@ -57,7 +57,7 @@ def dooz(XO, *l):
             return dooz('X', *l)
 
 numbers = ['1','2','3','4','5','6','7','8','9']
-print('--TicTocToe--\n')
+print('__ Tic-Tac-Toe __\n')
 print('Welcome, this is TicTocToe game\n')
 print('who wants to begin first, Choose between "X" and "O"')
 player = input('or if you want the game select randomly, enter "random"\n(X - O - random) : ')
@@ -73,7 +73,7 @@ while True:
         player = input('wrong input! choose between "X" and "O" : ')
 
 os.system('cls' if os.name == 'nt' else 'clear')
-print('--TicTocToe--\n')
+print('__ Tic-Tac-Toe __\n')
 print(f'OK, player "{player}" has the first move\n')
 time.sleep(1)
 for i in range(3,0,-1):
