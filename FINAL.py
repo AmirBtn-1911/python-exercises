@@ -154,7 +154,12 @@ class PhoneButtons:
         for n , m in dic2.items():
             m = m.lstrip(' +')
             print(f"key {n} : {m}")
-    
+
+class posetives:
+    def __init__(self, *nums):
+        func = list(filter(lambda num : num >= 0 , nums))
+        return func
+
 def end(program): print(f'\nEnd of the program {program}\n');
 error = 'Wrong input, try again!'
 while True:
@@ -170,7 +175,7 @@ while True:
         print('8.Upper text')
         print('9.Encode Decoder')
         print('10.Phone buttons')
-        print('11.Posetive finer')
+        print('11.Posetive finder')
         print('12.File Copier')
         print('13.txt finder')
         print('14.TicTacToe')
@@ -320,6 +325,21 @@ while True:
                     break
                 except:
                     print(error); continue
+            end(option)
+        elif option == '11': # posetive finder
+            print('give me some numbers to I find the posetive values: ')
+            numbers = []
+            count = 1
+            while True:
+                try:
+                    number = input(f'{count}. enter ur number(leave the input when u are done): ')
+                    if number == '': break
+                    numbers += [float(number)]
+                    count += 1
+                except:
+                    print(error); continue
+            posetive_numbers = posetives(*numbers)
+            print(f'\nposetive numbers: {posetive_numbers}')
             end(option)
         elif option.lower() == 'end':
             break
