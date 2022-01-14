@@ -1,3 +1,6 @@
+class NotYetCompleted(Exception):
+    pass
+
 class avg_finder:
     def find(self, scores):
         avg2 = avg1 = counter = 0
@@ -163,23 +166,23 @@ class posetives:
 def end(program): print(f'\nEnd of the program {program}\n');
 error = 'Wrong input, try again!'
 while True:
-    # try:
-        print('--List of the programs--')
-        print('1.Avarage finder')
-        print('2.Histofram')
-        print('3.Fibonacci')
-        print('4.Geometry')
-        print('5.vowels finder')
-        print('6.Calculator')
-        print('7.Normal = reversed')
-        print('8.Upper text')
-        print('9.Encode Decoder')
-        print('10.Phone buttons')
-        print('11.Posetive finder')
-        print('12.File Copier')
-        print('13.txt finder')
-        print('14.TicTacToe')
-        print('15.SHOP')
+    print('--List of the programs--')
+    print('1.Avarage finder')
+    print('2.Histofram')
+    print('3.Fibonacci')
+    print('4.Geometry')
+    print('5.vowels finder')
+    print('6.Calculator')
+    print('7.Normal = reversed')
+    print('8.Upper text')
+    print('9.Encode Decoder')
+    print('10.Phone buttons')
+    print('11.Posetive finder')
+    print('12.File Copier')
+    print('13.txt finder')
+    print('14.TicTacToe')
+    print('15.SHOP')
+    try:
         option = input('enter the program number: ')
 
         if option == '1': # avarage finder
@@ -341,5 +344,19 @@ while True:
             posetive_numbers = posetives(*numbers)
             print(f'\nposetive numbers: {posetive_numbers}')
             end(option)
+        elif option == '12':
+            raise NotYetCompleted
+        elif option == '13':
+            raise NotYetCompleted
+        elif option == '14':
+            raise NotYetCompleted
+        elif option == '15':
+            raise NotYetCompleted
         elif option.lower() == 'end':
             break
+        else:
+            raise
+    except NotYetCompleted:
+        print('not yet completed! enter another')
+    except:
+        print(error)
