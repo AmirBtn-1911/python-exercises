@@ -1,0 +1,8 @@
+from datetime import datetime
+import time
+import os
+os.system("cls" if os.name == "nt" else "clear")
+
+while True:
+    print(f'time : {datetime.now().hour} : {datetime.now().minute} : {datetime.now().second}', end= '\r')
+    time.sleep(1)
